@@ -1,21 +1,23 @@
 <html>
     <head>
-        <title>Getter</title>
+        <title> Setter</title>
         <script type = "text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <script type = "text/javascript" language = "javascript">
     $(document).ready(function()
     {
-       var title = $("em").attr("title");
-       $("#divid").text(title);
+       $("table").attr("border", function(arr)
+       
+       {
+           return arr;
+       });
     });
     </script>
     </head>
     <body>
-        <div>
-            <em title="Learn JQuery"> Introduction</em>
-            <p id="myid">First Program</p>
-            <div id="divid"></div>
-        </div>
+       <table><tr><td>BE</td></tr></table>
+       <table><tr><td>MCA</td></tr></table>
+       <table><tr><td>MBA</td></tr></table>
+       <table><tr><td>PGDM</td></tr></table>
     </body>
 </html>
